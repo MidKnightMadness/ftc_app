@@ -10,7 +10,7 @@
 ```bash
    cd ftc_app/
 
-   git submodule update --init
+   git submodule update --init --remote
    ```
  - Open it as an android studio project
  - `Preferences` -> `VCS` -> add `TeamCode/src/main/java/org/firstinspires/ftc/teamcode` as git root and remove all other roots
