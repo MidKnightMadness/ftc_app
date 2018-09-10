@@ -1,7 +1,4 @@
 dependencies {
-    delete files("build/generated/source/apt/debug/")
-    provided files("libs/RobotAnnotations.jar")
-    annotationProcessor files("libs/RobotProcessor.jar")
     compile project(':FtcRobotController')
     compile (name: 'RobotCore-release', ext: 'aar')
     compile (name: 'Hardware-release', ext: 'aar')
