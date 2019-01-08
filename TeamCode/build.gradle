@@ -10,6 +10,13 @@
 
 
 // Custom definitions may go here
+task remoteHotLoad(type: Exec) {
+    commandLine "${System.env.HOME}/Robotics/ftc_http", "-u", "-b"
+}
+
+task cleanHotLoad(type: Exec) {
+    commandLine "${System.env.HOME}/Robotics/ftc_http", "-w", "-b"
+}
 
 // Include common definitions from above.
 apply from: '../build.common.gradle'
